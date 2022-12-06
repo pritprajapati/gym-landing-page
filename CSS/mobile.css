@@ -1,0 +1,15 @@
+#navbar {
+    flex-direction: column;
+}
+
+#services {
+    flex-direction: column;
+}
+
+#services .box{
+
+}
+
+#clients {
+    overflow: hidden;
+}

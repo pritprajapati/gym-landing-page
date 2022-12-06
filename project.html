@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+<style>
+    /* CSS reset */
+    body{
+        margin: 0px;
+        font-family: 'Chango', cursive;
+        padding: 0px;
+        background: url('img/bg2.webp');
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 30px;
+        top: 20px;
+        background-color: black;
+        cursor: pointer;
+    }
+
+    .left div {
+        color: white;
+        text-align: center;
+    }
+
+    .left img {
+        width: 70px;
+        filter: invert(100%);
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        margin: 20px auto;
+        width: 40%;
+    }
+
+    .mid ul li {
+        list-style: none;
+    }
+
+    .mid ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 20px 20px;
+    }
+    .right {
+        position: absolute;
+        right: 30px;
+        top: 31px;
+        /* border: 2px solid yellow; */
+        display: inline-block;
+    }
+
+    .div {
+        line-height: 0px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a:hover, .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        font-family: 'Chango', cursive;
+        margin: 7px 14px;
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+        font-size: 15px;
+        cursor: pointer;
+        border: 3px solid gray;
+    }
+
+    .btn:hover {
+        background-color: rgb(50, 49, 49);
+    }
+
+    .container {
+        border: 6px solid white;
+        margin: 104px 80px;
+        padding: 72px;
+        width: 34%;
+        border-radius: 20px;
+    }
+    .container h1{
+        color: white;
+        text-align: center;
+
+    }
+
+    .form input {
+        margin: 5px auto;
+        width: 70%;
+        font-size: 16px;
+        border: 3px solid black;
+        border-radius: 8px;
+        padding: 5px 20px;
+        display: block;
+        text-align: center;
+        font-family: 'Chango', cursive;
+    }
+
+    .container .btn {
+        display: block;
+        width: auto;
+        margin: 20px auto;
+        width: 70%;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- for logo -->
+            <img src="img/logo.png" alt="logo">
+            <div>GYM</div>
+        </div>
+        <div class="mid">
+            <!-- for navbar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">BMI</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- for buttons -->
+            <button class="btn">Email us</button>
+            <button class="btn">Social media</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join India's top GYM!</h1>
+        <form action="noaction.php">
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form">
+                <input type="number" name="" placeholder="Enter your age">
+            </div>
+            <div class="form">
+                <input type="number" name="" placeholder="Enter your number">
+            </div>
+            <div class="form">
+                <input type="email" name="" placeholder="Enter your Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
